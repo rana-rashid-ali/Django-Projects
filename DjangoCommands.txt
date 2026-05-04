@@ -35,6 +35,9 @@ pip install django
 // to run django project
 	python manage.py runserver
 	
-	
+// to run django project on specified port
+	python manage.py runserver 5000
+
+
 	
 
