@@ -1,0 +1,40 @@
+// to check installed python version
+python --version
+
+// to check installed pip version
+pip --version
+
+// to create virtual env from python builtin venv
+python -m venv venv
+
+// to activte venv
+.\venv\Scripts\activate
+
+// to deactivate
+deactivate
+
+// to instal Django
+pip install django
+
+// 	to share venv file to other use so he can also install packages according to our venv
+//	Step 1: to view packages that will be shared
+	pip freeze
+	
+//	Step 2: pip freeze > req.txt
+//  above command will create a txt file and make list of  all installed packages with their versions
+
+// step 3: deactivate venv if not already deactivate 
+   command: deactivate
+   
+ // other user will do the following steps to installed packages from our req.txt file
+ // step 4: pip install -r .\req.txt
+ 
+ // to create new project 
+	python django-admin startproject projectname .
+	
+// to run django project
+	python manage.py runserver
+	
+	
+	
+
