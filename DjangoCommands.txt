@@ -30,6 +30,8 @@ pip install django
  // step 4: pip install -r .\req.txt
  
  // to create new project 
+	django-admin startproject projectname .
+	OR		
 	python django-admin startproject projectname .
 	
 // to run django project
@@ -40,5 +42,13 @@ pip install django
 
 // to create an app in django
 python manage.py startapp appname
-	
 
+// to initiialize database
+python manage.py migrate
+
+// to create table in database from models
+// after creating models, run following command
+python manage.py makemigrations
+
+// to migrate newly created table to database, after creating run following command
+python manage.py migrate
